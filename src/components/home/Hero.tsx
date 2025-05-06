@@ -32,3 +32,6 @@ From campus life to city adventures, G-Ni simplifies your journey with essential
 };
 
 export default Hero;
+
+
+// eee
