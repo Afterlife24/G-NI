@@ -1,0 +1,45 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+  /* Color definitions */
+  .text-gold-500 {
+    color: #d4af37;
+  }
+
+  .bg-navy-900 {
+    background-color: #0a192f;
+  }
+
+  /* Animation for the overlay */
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+
+    to {
+      opacity: 0;
+    }
+  }
+
+  .animate-fade-out {
+    animation: fadeOut 0.5s ease-out forwards;
+  }
+
+  /* Smooth transitions */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[#0a192f] text-white;
+    /* Default background */
+  }
+}
