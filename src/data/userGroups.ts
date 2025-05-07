@@ -21,6 +21,17 @@ export const userGroups: UserGroup[] = [
         title: 'Banking Setup',
         description: 'Assistance with U.S. banking system navigation',
         included: ['Account opening support', 'Mobile banking setup', 'Financial guidance']
+      },
+
+       {
+        title: 'Network Support',
+        description: 'Help with getting connected to mobile and internet services',
+        included: ['SIM card procurement', 'Mobile plan selection', 'Wi-Fi setup assistance']
+      },
+      {
+        title: 'Local Travel Card',
+        description: 'Assistance in obtaining and using a local transit pass',
+        included: ['Transit card registration', 'Route guidance', 'Reload and usage help']
       }
     ]
   },
