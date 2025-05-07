@@ -76,7 +76,7 @@ const Contact: React.FC = () => {
                     <Mail className="text-yellow-500 mr-4 mt-1 flex-shrink-0" size={20} />
                     <div>
                       <h4 className="font-semibold text-white">Email</h4>
-                      <p className="text-gray-300">info@g-ni.com</p>
+                      <p className="text-gray-300">contact@gniapp.com</p>
                     </div>
                   </div>
                   
@@ -84,7 +84,7 @@ const Contact: React.FC = () => {
                     <Phone className="text-yellow-500 mr-4 mt-1 flex-shrink-0" size={20} />
                     <div>
                       <h4 className="font-semibold text-white">Phone</h4>
-                      <p className="text-gray-300">+1 (123) 456-7890</p>
+                      <p className="text-gray-300">+1 605 605 1233</p>
                     </div>
                   </div>
                   
@@ -93,8 +93,8 @@ const Contact: React.FC = () => {
                     <div>
                       <h4 className="font-semibold text-white">Office</h4>
                       <p className="text-gray-300">
-                        123 University Avenue<br />
-                        Cambridge, MA 02138<br />
+                        800 N King Street Suite 304 #3529<br />
+                        WilmingtonDE-19801<br />
                         United States
                       </p>
                     </div>
