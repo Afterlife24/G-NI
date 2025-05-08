@@ -1570,7 +1570,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
       
       <div className="relative z-10 flex flex-col md:flex-row items-center justify-center" style={{ zIndex: 3 }}>
         <div 
-  className="flex items-center justify-center px-4 py-8 text-3xl sm:text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-bold text-center break-words"
+  className="flex items-center justify-center px-4 py-8 text-3xl sm:text-4xl md:text-6xl lg:text-8xl xl:text-9xl font-bold"
   style={{ fontFamily: 'glitten', color: colors.gold }}
 >
 
