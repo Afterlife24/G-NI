@@ -5,12 +5,11 @@ import { CheckCircle } from 'lucide-react';
 
 const Benefits: React.FC = () => {
   const benefits = [
-    "Stress-free arrival with airport pickup",
-    "Immediate connectivity with pre-activated SIM cards",
-    "Assistance with essential banking setup",
-    "Guidance on local transportation systems",
-    "Support from experienced international student advisors",
-    "Time-saving services to help you focus on studies"
+    "From pre-arrival guidance to on-ground support, we cover every step of your journey.",
+    "Customized services for students, tourists, and business traveller’s.",
+    "Smooth transition into new environments with tips, tools, and insider knowledge.",
+    "Get transparent, cost-effective packages with no hidden surprises.",
+    "Access trusted accommodation, transport, and essential services in any destination."
   ];
   
   return (

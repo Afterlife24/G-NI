@@ -168,12 +168,14 @@ const ServiceDetails: React.FC = () => {
       "https://images.pexels.com/photos/1438081/pexels-photo-1438081.jpeg", // Housing Assistance
       "https://images.pexels.com/photos/3769714/pexels-photo-3769714.jpeg", // Banking Setup
       "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg", // Network Support
-      "https://images.pexels.com/photos/5325704/pexels-photo-5325704.jpeg"  // Local Travel Card
+      "https://images.pexels.com/photos/5325704/pexels-photo-5325704.jpeg",
+      "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg"// Local Travel Card
     ],
     tourists: [
       "https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg",
       "https://images.pexels.com/photos/7625042/pexels-photo-7625042.jpeg",
-      "https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg"
+      "https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg",
+      "https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg"
     ],
     business: [
       "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
@@ -218,7 +220,7 @@ const ServiceDetails: React.FC = () => {
                 {group.title}
               </h1>
               <p className="text-lg text-white opacity-90 max-w-3xl mx-auto">
-                {group.description}
+                {group.tagline} {/* Changed from description to tagline */}
               </p>
             </div>
 

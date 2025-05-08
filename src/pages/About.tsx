@@ -2,7 +2,7 @@ import React from 'react';
 import Container from '../components/ui/Container';
 import Section from '../components/ui/Section';
 import WaitlistSection from '../components/home/WaitlistSection';
-import { Users, Lightbulb, Globe } from 'lucide-react';
+import { Users, Lightbulb, Globe, CheckCircle } from 'lucide-react';
 
 const About: React.FC = () => {
   return (
@@ -15,13 +15,13 @@ const About: React.FC = () => {
                 About G-NI
               </h1>
               <p className="text-lg text-white opacity-90">
-                Bridging the gap between international students and American campus life.
+                Smart relocation, powered by context-aware AI.
               </p>
             </div>
             
             <div className="mb-12">
               <img 
-                src="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
+                src="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg" 
                 alt="International students on campus" 
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
               />
@@ -29,17 +29,12 @@ const About: React.FC = () => {
             
             <div className="prose prose-lg max-w-none text-gray-300">
               <p>
-                G-NI was founded with a simple mission: to make the transition to studying
-                in the United States as smooth and stress-free as possible for international 
-                students. We understand the challenges that come with moving to a new country, 
-                navigating unfamiliar systems, and adapting to a different culture.
+                G-NI is transforming from a concierge service into a mobility-tech platform that personalises every step of international transition. Our soon-to-launch mobile app layers intelligent guidance on top of our proven logistics infrastructure—so students, professionals and travellers get what they need before they even ask.
               </p>
               
+              <h2 className="text-2xl font-bold text-yellow-500 mt-10 mb-4">Our Mission</h2>
               <p>
-                Our team consists of former international students and education professionals
-                who have experienced these challenges firsthand. This personal understanding
-                drives our commitment to providing services that address the real needs of
-                international students upon arrival.
+                To eliminate friction from international relocation by combining on‑the‑ground concierge logistics with cloud‑level intelligence—so users can focus on learning, working and exploring.
               </p>
               
               <div className="my-10 grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -59,7 +54,7 @@ const About: React.FC = () => {
                   </div>
                   <h3 className="text-xl font-semibold text-yellow-500 mb-2">Our Vision</h3>
                   <p className="text-gray-300">
-                    A world where cultural transition enhances rather than hinders education
+                    A borderless world where technology makes every new city feel instantly familiar
                   </p>
                 </div>
                 
@@ -73,26 +68,42 @@ const About: React.FC = () => {
                   </p>
                 </div>
               </div>
+
+              {/* Impact Metrics Section */}
+              <div className="my-10 bg-white/5 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-yellow-500 mb-4 text-center">
+                  Our Measurable Impact
+                </h3>
+                <div className="space-y-4">
+                  <div className="flex items-start">
+                    <CheckCircle className="text-yellow-500 mt-1 mr-3 flex-shrink-0" size={20} />
+                    <div>
+                      <span className="font-medium text-white">70% faster onboarding</span> — banking, SIM and housing activated in &lt; 24h
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-yellow-500 mt-1 mr-3 flex-shrink-0" size={20} />
+                    <div>
+                      <span className="font-medium text-white">25% higher satisfaction</span> — dynamic itineraries deliver better activity ratings
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle className="text-yellow-500 mt-1 mr-3 flex-shrink-0" size={20} />
+                    <div>
+                      <span className="font-medium text-white">40% social boost</span> — improved early-semester integration through community matching
+                    </div>
+                  </div>
+                </div>
+              </div>
               
               <h2 className="text-2xl font-bold text-yellow-500 mt-10 mb-4">Our Commitment</h2>
               <p>
-                At G-NI, we're committed to providing not just services, but peace of mind.
-                We believe that when basic logistical concerns are addressed, students can
-                focus on what really matters: their education and cultural experience.
-              </p>
-              
-              <p>
-                We're continuously expanding our services based on student feedback and evolving
-                needs. Our goal is to grow alongside the international student community,
-                adapting to provide the most relevant and helpful services possible.
+                G-NI combines verified local partners with machine-learning models that continually refine recommendations. The result: personalised, compliant, community-connected relocation—backed by human concierges for edge-case support.
               </p>
               
               <h2 className="text-2xl font-bold text-yellow-500 mt-10 mb-4">Join Us</h2>
               <p>
-                We're excited to be launching soon and invite you to join our waitlist to be
-                among the first to benefit from our services. Whether you're preparing for your
-                first semester abroad or looking to make your next term easier, G-NI is here
-                to support your journey.
+                Be first to experience friction‑free relocation. Join the wait‑list and unlock early‑access pricing, priority support and beta‑only features when the G‑NI app goes live.
               </p>
             </div>
             

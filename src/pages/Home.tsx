@@ -2,7 +2,7 @@ import React from 'react';
 import Hero from '../components/home/Hero';
 import ServiceHighlights from '../components/home/ServiceHighlights';
 import Benefits from '../components/home/Benefits';
-import Testimonials from '../components/home/Testimonials';
+import AppFeatures from '../components/home/AppFeatures';
 import WaitlistSection from '../components/home/WaitlistSection';
 
 const Home: React.FC = () => {
@@ -11,7 +11,7 @@ const Home: React.FC = () => {
       <Hero />
       <ServiceHighlights />
       <Benefits />
-      <Testimonials />
+      <AppFeatures/>
       <WaitlistSection />
     </>
   );

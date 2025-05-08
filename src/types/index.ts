@@ -60,4 +60,6 @@ export interface UserGroup {
   description: string;
   icon: string;
   services: UserService[];
+    tagline: string;  // Add this line
+
 }

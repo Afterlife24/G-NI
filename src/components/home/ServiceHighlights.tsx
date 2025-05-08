@@ -97,7 +97,8 @@ const ServiceHighlights: React.FC = () => {
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Services</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Comprehensive support services tailored for different needs in the United States.
+            Personalized Packages for Every Purpose – We’ve Got You 
+Covered.
           </p>
         </div>
 

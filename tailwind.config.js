@@ -14,8 +14,8 @@ export default {
           600: '#394a8c',
           700: '#2d3a6f',
           800: '#213058',
-          900: '#1a2744', // Updated primary navy blue
-          950: '#131c32',
+          900: '#1F5AAA', // Updated primary navy blue
+          950: '#1F5AAA',
         },
         yellow: {
           400: '#ffd866',
@@ -23,9 +23,10 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
-      },
+      sans: ['Mulish', 'sans-serif'],
+        serif: ['Mulish', 'serif'],
+      glitten: ['Glitten', 'sans-serif']
+    },
       animation: {
         fadeIn: 'fadeIn 0.5s ease-in-out',
         slideIn: 'slideIn 1s ease-out',

@@ -7,6 +7,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@font-face {
+  font-family: 'Glitten';
+  src: url('https://db.onlinewebfonts.com/t/1064f0ad1cb65fdab43bb592fdd786be.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @layer utilities {
 
   /* Color definitions */
@@ -43,3 +52,5 @@
     /* Default background */
   }
 }
+
+

@@ -13,11 +13,15 @@ const Hero: React.FC = () => {
       <Container className="relative z-10 h-full flex items-center">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Your All-in-One 
-            <span className="text-yellow-500"> Gateway to the U.S.</span>
-          </h1>
+  G-NI <br />
+  <span className="text-yellow-500">Gateway of New International.</span>
+</h1>
+
           <p className="text-lg md:text-xl text-white opacity-90 mb-8 md:mb-10">
-From campus life to city adventures, G-Ni simplifies your journey with essential services: transportation, accommodation, SIM cards, banking, and curated tours—all in one place.          </p>
+             G-NI (Gateway of New International) provides comprehensive concierge 
+services designed to facilitate seamless transitions for international 
+travelers entering new environments. </p>
+
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a href="#services">
               <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
