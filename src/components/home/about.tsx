@@ -1,17 +1,27 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Container from '../ui/Container';
 import Section from '../ui/Section';
 
 const AboutSection: React.FC = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/about'); // Use the exact route path you defined
+  };
+
   return (
-    <Section id="about" className="bg-blue-950 py-20">
+    <Section 
+      id="about" 
+      className="bg-blue-950 py-20 cursor-pointer hover:bg-blue-900 transition-colors duration-300"
+      onClick={handleClick}
+    >
       <Container>
         <div className="max-w-5xl mx-auto">
           <div className="mb-12 text-center">
             <span className="text-white uppercase tracking-wider text-[30px] md:text-[50px] font-bold mb-4 block">
               About 
             </span>
-            
             <div className="w-24 h-1 bg-blue-500 mx-auto mt-6"></div>
           </div>
 

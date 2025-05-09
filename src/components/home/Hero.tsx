@@ -20,9 +20,9 @@ const Hero: React.FC = () => {
       
       <Container className="relative z-10 h-full flex items-center">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-8xl font-bold mb-6 leading-tight" style={{ fontFamily: "'Gütten', serif" }}>
+          <h1 className="text-6xl md:text-5xl lg:text-8xl font-bold mb-6 leading-tight" style={{ fontFamily: "'Gütten', serif" }}>
             g-ni <br />
-            <span className="text-4xl md:text-5xl lg:text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "'Gütten', serif" }}>Gateway of New International.</span>
+            <span className="text-xl md:text-3xl lg:text-4xl font-bold mb-6 leading-tight" style={{ fontFamily: "'Gütten', serif" }}>Gateway of New International.</span>
           </h1>
 
           <p className="text-lg md:text-xl text-white opacity-90 mb-8 md:mb-10 font-sans">

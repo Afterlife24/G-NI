@@ -32,7 +32,7 @@ const Benefits: React.FC = () => {
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start">
-                  <CheckCircle className="text-white mt-1 mr-3 flex-shrink-0" size={20} />
+                  <CheckCircle className="text-yellow-500 mt-1 mr-3 flex-shrink-0" size={20} />
                   <p className="text-white">{benefit}</p>
                 </div>
               ))}
@@ -42,7 +42,7 @@ const Benefits: React.FC = () => {
           <div className="rounded-lg overflow-hidden shadow-xl">
             <video 
               autoPlay 
-              loop 
+              
               muted 
               playsInline
               className="w-full h-full object-cover"

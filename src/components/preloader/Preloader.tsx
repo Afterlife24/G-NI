@@ -1402,7 +1402,7 @@ const Preloader = ({ onComplete }: { onComplete: () => void }) => {
       ease: "power2.out"
     }, "+=0.3")
     .to(elements.preloader.current, {
-      y: '100vh',
+      y: '-100vh',
       duration: 1.2,
       ease: "power2.in",
       onComplete: onComplete

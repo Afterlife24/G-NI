@@ -31,14 +31,14 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-blue-950 backdrop-blur-sm shadow-md py-2' : 'bg-transparent py-4'
+        isScrolled ? 'bg-white backdrop-blur-sm shadow-md py-2' : 'bg-transparent py-4'
       }`}
     >
       <Container>
         <nav className="flex items-center justify-between">
-          <a href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-white"  style={{ fontFamily: "'Gütten', serif" }}>g-ni</span>
-          </a>
+        <span className={`text-2xl font-bold ${isScrolled ? 'text-blue-950' : 'text-transparent'}`} style={{ fontFamily: "'Gütten', serif" }}>
+  g-ni
+</span>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6">
@@ -47,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
                 <li key={item.path}>
                   <a 
                     href={item.path} 
-                    className="font-medium text-white hover:text-white transition-colors"
+                    className="font-medium text-white hover:text-blue-950 transition-colors"
                   >
                     {item.title}
                   </a>
@@ -55,7 +55,7 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
               ))}
             </ul>
             <a href="#join-waitlist">
-              <Button variant="secondary">Join Waitlist</Button>
+              <Button variant="primary">Join Waitlist</Button>
             </a>
           </div>
           

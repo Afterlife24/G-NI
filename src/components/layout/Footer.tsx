@@ -2,6 +2,8 @@ import React from 'react';
 import Container from '../ui/Container';
 import { NavItem } from '../../types';
 import '../../styles/fonts.css';
+import logo from '../../assets/images/ER.jpg'; // Adjust the import path to your logo
+
 
 
 interface FooterProps {
@@ -16,7 +18,9 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
           <div>
             <h3 className="text-4xl font-bold mb-4"  style={{ fontFamily: "'Gütten', serif" }}>g-ni</h3>
             <p className="text-white mb-4">
-              Simplifying the transition for international students arriving in the United States.
+            G-NI (Gateway of New International), a Global concierge 
+            relocation service designed to facilitate seamless transitions for international
+            travelers.
             </p>
           </div>
           
@@ -61,17 +65,23 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
         <div className="border-t border-blue-800 mt-8 pt-8 text-center">
           {/* Added section above copyright */}
           <div className="mb-2">
-            <a 
-              href="https://www.evanriosprojects.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="group inline-flex items-center gap-1 text-white  transition-colors"
-            >
-             <span className="font-medium text-[#9b111e] group-hover:text-[#9b111e]/90 transition-colors">
-  Evan Rios Projects
-</span>
-            </a>
-          </div>
+      <a 
+        href="https://www.evanriosprojects.com" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="group inline-flex items-center gap-1 text-white transition-colors"
+      >
+        <img 
+          src={logo} 
+          alt="Evan Rios Projects Logo" 
+          className="h-6 w-6" // Adjust size as needed
+        />
+        <span className="font-medium text-[#9b111e] group-hover:text-[#9b111e]/90 transition-colors">
+          Evan Rios Projects
+        </span>
+      </a>
+    </div>
+
           <p className="text-white">&copy; {new Date().getFullYear()} G-NI. All rights reserved.</p>
         </div>
       </Container>

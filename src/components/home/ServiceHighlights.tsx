@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Container from '../ui/Container';
 import Section from '../ui/Section';
@@ -33,8 +32,10 @@ const ServiceHighlights: React.FC = () => {
           {userGroups
             .filter((group) => group.id === 'students')
             .map((group) => {
+              // Use the same icon as tourist card by finding tourist group's icon
+              const touristGroup = userGroups.find(g => g.id === 'students');
               const IconComponent = (LucideIcons as any)[
-                group.icon.charAt(0).toUpperCase() + group.icon.slice(1)
+                touristGroup?.icon.charAt(0).toUpperCase() + touristGroup?.icon.slice(1)
               ];
 
               return (
@@ -53,15 +54,15 @@ const ServiceHighlights: React.FC = () => {
                       />
                     </div>
                     <div className="relative z-20 pt-12 group-hover:pt-48 transition-all duration-300 ease-in-out">
-                        <div className="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 ">
-                        {IconComponent && (
+                    <div className="bg-blue-900 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 ">
+                    {IconComponent && (
                           <IconComponent
-                            className="text-blue-900"
+                            className="text-blue-90"
                             size={24}
                           />
                         )}
                       </div>
-                      <span className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-2 shadow-md animate-pulse">                        ✨ NEW for Students
+                      <span className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-2 shadow-md animate-pulse">                        ✨  For Students
                       </span>
                       <h3 className="text-xl font-semibold text-blue-900 mb-2">
                         {group.title}
