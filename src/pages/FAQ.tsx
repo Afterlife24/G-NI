@@ -18,7 +18,7 @@ const FAQ: React.FC = () => {
         <Container>
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-500 mb-4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
                 Frequently Asked Questions
               </h1>
               <p className="text-lg text-white opacity-90 max-w-2xl mx-auto">

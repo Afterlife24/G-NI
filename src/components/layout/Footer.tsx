@@ -13,7 +13,7 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">G-NI</h3>
-            <p className="text-gray-300 mb-4">
+            <p className="text-white mb-4">
               Simplifying the transition for international students arriving in the United States.
             </p>
           </div>
@@ -25,7 +25,7 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
                 <li key={item.path}>
                   <a 
                     href={item.path} 
-                    className="text-gray-300 hover:text-yellow-400 transition-colors"
+                    className="text-white hover:text-yellow-400 transition-colors"
                   >
                     {item.title}
                   </a>
@@ -36,7 +36,7 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <address className="not-italic text-gray-300 space-y-2">
+            <address className="not-italic text-white space-y-2">
               <p>Email: contact@gniapp.com</p>
               <p>Phone: +1 605 605 1233</p>
             </address>
@@ -44,12 +44,12 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Join Our Waitlist</h4>
-            <p className="text-gray-300 mb-4">
+            <p className="text-white mb-4">
               Be the first to know when we launch our services.
             </p>
             <a 
               href="#join-waitlist" 
-              className="bg-yellow-500 text-blue-900 px-4 py-2 rounded-md font-medium hover:bg-yellow-400 transition-colors inline-block"
+              className="bg-white text-blue-950 px-4 py-2 rounded-md font-medium hover:bg-yellow-400 transition-colors inline-block"
             >
               Sign Up Now
             </a>
@@ -63,14 +63,14 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
               href="https://www.evanriosprojects.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-1 text-gray-300 hover:text-yellow-400 transition-colors"
+              className="group inline-flex items-center gap-1 text-white hover:text-yellow-400 transition-colors"
             >
-              <span className="font-medium text-yellow-400 group-hover:text-yellow-300 transition-colors">
-                Evan Rios Projects
-              </span>
+             <span className="font-medium text-[#9b111e] group-hover:text-[#9b111e]/90 transition-colors">
+  Evan Rios Projects
+</span>
             </a>
           </div>
-          <p className="text-gray-400">&copy; {new Date().getFullYear()} G-NI. All rights reserved.</p>
+          <p className="text-white">&copy; {new Date().getFullYear()} G-NI. All rights reserved.</p>
         </div>
       </Container>
     </footer>

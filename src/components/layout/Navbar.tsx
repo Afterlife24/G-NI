@@ -3,6 +3,8 @@ import { Menu, X } from 'lucide-react';
 import Container from '../ui/Container';
 import { NavItem } from '../../types';
 import Button from '../ui/Button';
+import '../../styles/fonts.css';
+
 
 interface NavbarProps {
   navItems: NavItem[];
@@ -29,13 +31,13 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white/95 backdrop-blur-sm shadow-md py-2' : 'bg-transparent py-4'
+        isScrolled ? 'bg-blue-950 backdrop-blur-sm shadow-md py-2' : 'bg-transparent py-4'
       }`}
     >
       <Container>
         <nav className="flex items-center justify-between">
           <a href="/" className="flex items-center">
-            <span className="text-2xl font-bold text-blue-900">G-NI</span>
+            <span className="text-2xl font-bold text-white"  style={{ fontFamily: "'Gütten', serif" }}>g-ni</span>
           </a>
           
           {/* Desktop Menu */}
@@ -45,7 +47,7 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
                 <li key={item.path}>
                   <a 
                     href={item.path} 
-                    className="font-medium text-gray-700 hover:text-blue-900 transition-colors"
+                    className="font-medium text-white hover:text-white transition-colors"
                   >
                     {item.title}
                   </a>

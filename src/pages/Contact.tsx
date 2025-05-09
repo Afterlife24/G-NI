@@ -59,7 +59,7 @@ const Contact: React.FC = () => {
         <Container>
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-500 mb-4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
                 Contact Us
               </h1>
               <p className="text-lg text-white opacity-90 max-w-2xl mx-auto">
@@ -69,11 +69,11 @@ const Contact: React.FC = () => {
             
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-8">
               <div className="lg:col-span-2 bg-white/5 p-6 rounded-lg">
-                <h3 className="text-xl font-bold text-yellow-500 mb-6">Get in Touch</h3>
+                <h3 className="text-xl font-bold text-white mb-6">Get in Touch</h3>
                 
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <Mail className="text-yellow-500 mr-4 mt-1 flex-shrink-0" size={20} />
+                    <Mail className="text-white mr-4 mt-1 flex-shrink-0" size={20} />
                     <div>
                       <h4 className="font-semibold text-white">Email</h4>
                       <p className="text-gray-300">contact@gniapp.com</p>
@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div className="flex items-start">
-                    <Phone className="text-yellow-500 mr-4 mt-1 flex-shrink-0" size={20} />
+                    <Phone className="text-white mr-4 mt-1 flex-shrink-0" size={20} />
                     <div>
                       <h4 className="font-semibold text-white">Phone</h4>
                       <p className="text-gray-300">+1 605 605 1233</p>
@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
                   </div>
                   
                   <div className="flex items-start">
-                    <MapPin className="text-yellow-500 mr-4 mt-1 flex-shrink-0" size={20} />
+                    <MapPin className="text-white mr-4 mt-1 flex-shrink-0" size={20} />
                     <div>
                       <h4 className="font-semibold text-white">Office</h4>
                       <p className="text-gray-300">
@@ -141,7 +141,7 @@ const Contact: React.FC = () => {
                         onChange={handleChange}
                         className={`w-full px-4 py-3 rounded-md bg-white/5 border ${
                           errors.name ? 'border-red-500' : 'border-white/10'
-                        } text-white focus:outline-none focus:ring-2 focus:ring-yellow-500`}
+                        } text-white focus:outline-none focus:ring-2 focus:ring-white`}
                         placeholder="Your name"
                       />
                       {errors.name && (
@@ -161,7 +161,7 @@ const Contact: React.FC = () => {
                         onChange={handleChange}
                         className={`w-full px-4 py-3 rounded-md bg-white/5 border ${
                           errors.email ? 'border-red-500' : 'border-white/10'
-                        } text-white focus:outline-none focus:ring-2 focus:ring-yellow-500`}
+                        } text-white focus:outline-none focus:ring-2 focus:ring-white`}
                         placeholder="Your email address"
                       />
                       {errors.email && (
@@ -181,7 +181,7 @@ const Contact: React.FC = () => {
                         rows={6}
                         className={`w-full px-4 py-3 rounded-md bg-white/5 border ${
                           errors.message ? 'border-red-500' : 'border-white/10'
-                        } text-white focus:outline-none focus:ring-2 focus:ring-yellow-500`}
+                        } text-white focus:outline-none focus:ring-2 focus:ring-white`}
                         placeholder="How can we help you?"
                       />
                       {errors.message && (

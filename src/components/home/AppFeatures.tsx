@@ -25,8 +25,8 @@ const AppFeatures: React.FC = () => {
               </h3>
             </div>
             <p className="text-gray-600 leading-relaxed text-sm">
-              Our smart AI Assistant is designed to help international students seamlessly integrate into local life. It provides essential insights on student rights, campus-specific guidance, and helps students connect with others from the same university and field of study—building community, confidence, and support from day one.
-            </p>
+            <strong>Your Local Guide. Powered by AI.</strong><br/>
+            Our AI Assistant is built to help international students get settled instantly from the airport to the classroom. It delivers college-specific insights on your rights, connects you to nearby student communities in your field of study, and helps you navigate banking, housing, and local essentials.<br/><strong> Think of it as your personalized onboarding partner smart, supportive, and tailored to your journey. </strong>           </p>
           </div>
 
           <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
@@ -39,8 +39,8 @@ const AppFeatures: React.FC = () => {
               </h3>
             </div>
             <p className="text-gray-600 leading-relaxed text-sm">
-              The planner creates personalized itineraries and provides real-time updates on local attractions and events—streamlining travel and enhancing satisfaction.
-            </p>
+            <strong>Explore Like a Local. Plan Like a Pro. </strong><br/>
+            Our AI-powered tourist planner does more than build itineraries it adapts to your travel style, suggests hidden gems, and delivers real-time updates on local spots, transport, and safety tips. <br/><strong>From day trips to nightlife, you’ll explore smarter, safer, and with complete confidence everywhere you go. </strong>           </p>
           </div>
         </div>
 

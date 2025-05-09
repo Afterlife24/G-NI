@@ -57,9 +57,12 @@ export interface UserService {
 export interface UserGroup {
   id: string;
   title: string;
-  description: string;
+  tagline: string;
+  description: React.ReactNode; // <-- updated from string
   icon: string;
-  services: UserService[];
-    tagline: string;  // Add this line
-
+  services: {
+    title: string;
+    description: string;
+    included: string[];
+  }[];
 }

@@ -91,9 +91,9 @@ import { userGroups } from '../../data/userGroups';
 import * as LucideIcons from 'lucide-react';
 
 // Import local images
-import studentImage from '../../assets/students.jpg';
-import touristImage from '../../assets/tourists.jpeg';
-import businessImage from '../../assets/bussiess.jpg';
+import studentImage from '../../assets/images/students.jpg';
+import touristImage from '../../assets/images/tourists.jpeg';
+import businessImage from '../../assets/images/bussiess.jpg';
 
 const ServiceHighlights: React.FC = () => {
   // Image mapping object
@@ -146,8 +146,7 @@ const ServiceHighlights: React.FC = () => {
                           />
                         )}
                       </div>
-                      <span className="inline-block bg-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-full mb-2 shadow-md animate-pulse">
-                        ✨ NEW for Students
+                      <span className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full mb-2 shadow-md animate-pulse">                        ✨ NEW for Students
                       </span>
                       <h3 className="text-xl font-semibold text-blue-900 mb-2">
                         {group.title}
@@ -155,7 +154,7 @@ const ServiceHighlights: React.FC = () => {
                       <p className="text-gray-600 flex-grow">
                         {group.description}
                       </p>
-                      <div className="mt-4 text-yellow-500 font-medium flex items-center">
+                      <div className="mt-4 text-black font-medium flex items-center">
                         Learn More
                         <LucideIcons.ArrowRight className="ml-2 w-4 h-4" />
                       </div>
@@ -204,7 +203,7 @@ const ServiceHighlights: React.FC = () => {
                         <p className="text-gray-600 flex-grow">
                           {group.description}
                         </p>
-                        <div className="mt-4 text-yellow-500 font-medium flex items-center">
+                        <div className="mt-4 text-black font-medium flex items-center">
                           Learn More
                           <LucideIcons.ArrowRight className="ml-2 w-4 h-4" />
                         </div>

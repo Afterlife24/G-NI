@@ -2,17 +2,17 @@ import React from 'react';
 import Container from '../ui/Container';
 import Section from '../ui/Section';
 import { CheckCircle } from 'lucide-react';
+import benefitsVideo from '../../assets/images/benefits .mp4'; // Adjust the path according to your project structure
 
 const Benefits: React.FC = () => {
   const benefits = [
     "From pre-arrival guidance to on-ground support, we cover every step of your journey.",
-    "Customized services for students, tourists, and business traveller’s.",
+    "Customized services for students, tourists, and business traveller's.",
     "From pre-arrival guidance to on-ground support, we cover every step of your journey.",
-    "Customized services for students, tourists, and business traveller’s.",
+    "Customized services for students, tourists, and business traveller's.",
     "Smooth transition into new environments with tips, tools, and insider knowledge.",
     "Get transparent, cost-effective packages with no hidden surprises.",
-    "Access trusted accommodation, transport, and essential services in any destination"
-
+    "Access trusted accommodation, transport, and essential services in any destination"
   ];
   
   return (
@@ -40,11 +40,16 @@ const Benefits: React.FC = () => {
           </div>
           
           <div className="rounded-lg overflow-hidden shadow-xl">
-            <img 
-              src="https://images.pexels.com/photos/1438072/pexels-photo-1438072.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-              alt="International students on campus" 
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
               className="w-full h-full object-cover"
-            />
+            >
+              <source src={benefitsVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
       </Container>
