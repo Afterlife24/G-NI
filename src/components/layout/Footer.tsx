@@ -51,7 +51,7 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
             </p>
             <a 
               href="#join-waitlist" 
-              className="bg-white text-blue-950 px-4 py-2 rounded-md font-medium hover:bg-yellow-400 transition-colors inline-block"
+              className="bg-white text-blue-950 px-4 py-2 rounded-md font-medium hover:bg-white transition-colors inline-block"
             >
               Sign Up Now
             </a>
