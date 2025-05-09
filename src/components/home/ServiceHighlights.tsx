@@ -190,7 +190,7 @@ const ServiceHighlights: React.FC = () => {
                         />
                       </div>
                       <div className="relative z-20 pt-12 group-hover:pt-48 transition-all duration-300 ease-in-out">
-                        <div className="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 ">
+                        <div className="bg-blue-900 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 ">
                           {IconComponent && (
                             <IconComponent
                               className="text-blue-90"
