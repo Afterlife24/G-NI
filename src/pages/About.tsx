@@ -3,8 +3,9 @@ import Container from '../components/ui/Container';
 import Section from '../components/ui/Section';
 import WaitlistSection from '../components/home/WaitlistSection';
 import { Users, Lightbulb, Globe, CheckCircle } from 'lucide-react';
+import AboutImage from '../assets/about us.jpg'; // Renamed import to avoid conflict
 
-const About: React.FC = () => {
+const AboutPage: React.FC = () => { // Renamed component to avoid conflict with image import
   return (
     <>
       <Section className="pt-24 bg-blue-950">
@@ -21,15 +22,16 @@ const About: React.FC = () => {
             
             <div className="mb-12">
               <img 
-                src="https://images.pexels.com/photos/256490/pexels-photo-256490.jpeg" 
+                src={AboutImage}
                 alt="International students on campus" 
                 className="w-full h-64 md:h-80 object-cover rounded-lg shadow-md"
+                loading="lazy" // Added lazy loading
               />
             </div>
             
             <div className="prose prose-lg max-w-none text-gray-300">
               <p>
-                G-NI is transforming from a concierge service into a mobility-tech platform that personalises every step of international transition. Our soon-to-launch mobile app layers intelligent guidance on top of our proven logistics infrastructure—so students, professionals and travellers get what they need before they even ask.
+                G-NI is transforming from a concierge service into a mobility-tech platform that personalizes every step of international transition. Our soon-to-launch mobile app layers intelligent guidance on top of our proven logistics infrastructure—so students, professionals and travelers get what they need before they even ask.
               </p>
               
               <h2 className="text-2xl font-bold text-yellow-500 mt-10 mb-4">Our Mission</h2>
@@ -38,35 +40,33 @@ const About: React.FC = () => {
               </p>
               
               <div className="my-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="flex flex-col items-center text-center p-4 bg-white/5 rounded-lg">
-                  <div className="bg-yellow-500/20 p-4 rounded-full mb-4">
-                    <Users className="text-yellow-500" size={32} />
+                {[
+                  {
+                    icon: Users,
+                    title: "Our Team",
+                    description: "Diverse professionals with firsthand experience as international students"
+                  },
+                  {
+                    icon: Lightbulb,
+                    title: "Our Vision",
+                    description: "A borderless world where technology makes every new city feel instantly familiar"
+                  },
+                  {
+                    icon: Globe,
+                    title: "Our Impact",
+                    description: "Empowering students to thrive academically by removing logistical barriers"
+                  }
+                ].map((item, index) => (
+                  <div key={index} className="flex flex-col items-center text-center p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors">
+                    <div className="bg-yellow-500/20 p-4 rounded-full mb-4">
+                      <item.icon className="text-yellow-500" size={32} />
+                    </div>
+                    <h3 className="text-xl font-semibold text-yellow-500 mb-2">{item.title}</h3>
+                    <p className="text-gray-300">
+                      {item.description}
+                    </p>
                   </div>
-                  <h3 className="text-xl font-semibold text-yellow-500 mb-2">Our Team</h3>
-                  <p className="text-gray-300">
-                    Diverse professionals with firsthand experience as international students
-                  </p>
-                </div>
-                
-                <div className="flex flex-col items-center text-center p-4 bg-white/5 rounded-lg">
-                  <div className="bg-yellow-500/20 p-4 rounded-full mb-4">
-                    <Lightbulb className="text-yellow-500" size={32} />
-                  </div>
-                  <h3 className="text-xl font-semibold text-yellow-500 mb-2">Our Vision</h3>
-                  <p className="text-gray-300">
-                    A borderless world where technology makes every new city feel instantly familiar
-                  </p>
-                </div>
-                
-                <div className="flex flex-col items-center text-center p-4 bg-white/5 rounded-lg">
-                  <div className="bg-yellow-500/20 p-4 rounded-full mb-4">
-                    <Globe className="text-yellow-500" size={32} />
-                  </div>
-                  <h3 className="text-xl font-semibold text-yellow-500 mb-2">Our Impact</h3>
-                  <p className="text-gray-300">
-                    Empowering students to thrive academically by removing logistical barriers
-                  </p>
-                </div>
+                ))}
               </div>
 
               {/* Impact Metrics Section */}
@@ -75,35 +75,29 @@ const About: React.FC = () => {
                   Our Measurable Impact
                 </h3>
                 <div className="space-y-4">
-                  <div className="flex items-start">
-                    <CheckCircle className="text-yellow-500 mt-1 mr-3 flex-shrink-0" size={20} />
-                    <div>
-                      <span className="font-medium text-white">70% faster onboarding</span> — banking, SIM and housing activated in &lt; 24h
+                  {[
+                    "70% faster onboarding — banking, SIM and housing activated in < 24h",
+                    "25% higher satisfaction — dynamic itineraries deliver better activity ratings",
+                    "40% social boost — improved early-semester integration through community matching"
+                  ].map((item, index) => (
+                    <div key={index} className="flex items-start">
+                      <CheckCircle className="text-yellow-500 mt-1 mr-3 flex-shrink-0" size={20} />
+                      <div>
+                        <span className="font-medium text-white">{item.split('—')[0]}</span> — {item.split('—')[1]}
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="text-yellow-500 mt-1 mr-3 flex-shrink-0" size={20} />
-                    <div>
-                      <span className="font-medium text-white">25% higher satisfaction</span> — dynamic itineraries deliver better activity ratings
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <CheckCircle className="text-yellow-500 mt-1 mr-3 flex-shrink-0" size={20} />
-                    <div>
-                      <span className="font-medium text-white">40% social boost</span> — improved early-semester integration through community matching
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
               
               <h2 className="text-2xl font-bold text-yellow-500 mt-10 mb-4">Our Commitment</h2>
               <p>
-                G-NI combines verified local partners with machine-learning models that continually refine recommendations. The result: personalised, compliant, community-connected relocation—backed by human concierges for edge-case support.
+                G-NI combines verified local partners with machine-learning models that continually refine recommendations. The result: personalized, compliant, community-connected relocation—backed by human concierges for edge-case support.
               </p>
               
               <h2 className="text-2xl font-bold text-yellow-500 mt-10 mb-4">Join Us</h2>
               <p>
-                Be first to experience friction‑free relocation. Join the wait‑list and unlock early‑access pricing, priority support and beta‑only features when the G‑NI app goes live.
+                Be first to experience friction‑free relocation. Join the wait‑list and unlock early‑access pricing, priority support and beta‑only features when the G‑NI app goes live.
               </p>
             </div>
             
@@ -123,4 +117,4 @@ const About: React.FC = () => {
   );
 };
 
-export default About;
+export default AboutPage;

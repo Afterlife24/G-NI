@@ -1,38 +1,14 @@
 import React from 'react';
 import Container from '../ui/Container';
 import Section from '../ui/Section';
-import { GraduationCap, Globe2 } from 'lucide-react'; // assuming you're using lucide-react
-
-const appModules = [
-  {
-    title: 'Campus Companion',
-    benefits: [
-      "Instantly surfaces a student’s visa rules, work-hour limits and institutional policies—custom-mapped to their specific university.",
-      "Connects each newcomer to the largest verified peer communities by campus, degree and field of study."
-    ]
-  },
-  {
-    title: 'Dynamic Travel Planner',
-    benefits: [
-      "Builds door-to-door itineraries with real-time housing, transit and activity updates.",
-      "Adapts plans on the fly when flights change or local events pop up."
-    ]
-  },
-  {
-    title: 'Proactive Logistics Engine',
-    benefits: [
-      "Automates SIM activation, banking, transit cards and compliance checklists within 24 h of arrival.",
-      "Pushes time-critical reminders (orientation, registration, visa renewals) directly to the app."
-    ]
-  }
-];
+import { GraduationCap, Globe2, Sparkles, Zap, Clock, CheckCircle } from 'lucide-react';
 
 const AppFeatures: React.FC = () => {
   return (
-    <Section className="bg-gradient-to-br from-gray-50 to-white text-gray-800 py-16">
+    <Section className="bg-blue-950 text-white py-16">
       <Container>
         <div className="text-center mb-14">
-          <h2 className="text-4xl font-extrabold text-blue-950 tracking-tight">
+          <h2 className="text-4xl font-extrabold text-white tracking-tight">
             ✦ What the New App Delivers
           </h2>
         </div>
@@ -49,8 +25,7 @@ const AppFeatures: React.FC = () => {
               </h3>
             </div>
             <p className="text-gray-600 leading-relaxed text-sm">
-              A 24/7 personalized AI Assistant revolutionizes academic support with tailored assistance, resource management,
-              and instant query resolution. It improves efficiency and mirrors benefits seen in leading educational platforms.
+              Our smart AI Assistant is designed to help international students seamlessly integrate into local life. It provides essential insights on student rights, campus-specific guidance, and helps students connect with others from the same university and field of study—building community, confidence, and support from day one.
             </p>
           </div>
 
@@ -69,32 +44,87 @@ const AppFeatures: React.FC = () => {
           </div>
         </div>
 
-        {/* Table */}
-        <div className="overflow-x-auto">
-          <table className="w-full border border-gray-200 rounded-xl bg-white shadow-md text-sm md:text-base">
-            <thead className="bg-blue-50 text-blue-900">
-              <tr>
-                <th className="py-4 px-5 font-semibold border-b border-gray-200 w-1/3">AI Module</th>
-                <th className="py-4 px-5 font-semibold border-b border-gray-200">Benefits for Users</th>
-              </tr>
-            </thead>
-            <tbody>
-              {appModules.map((module, index) => (
-                <tr key={index} className="hover:bg-gray-50">
-                  <td className="py-4 px-5 font-medium text-gray-900 align-top border-b border-gray-100">
-                    {module.title}
-                  </td>
-                  <td className="py-4 px-5 text-gray-700 border-b border-gray-100">
-                    <ul className="list-disc ml-5 space-y-2">
-                      {module.benefits.map((benefit, i) => (
-                        <li key={i}>{benefit}</li>
-                      ))}
-                    </ul>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+        {/* Feature Paragraph with Icons */}
+        <div className="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-gray-100">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
+            Seamless Integration & Smart Assistance
+          </h3>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="flex items-start space-x-4">
+              <div className="bg-purple-100 text-purple-600 p-2 rounded-lg">
+                <Sparkles className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-gray-700">
+                  <span className="font-semibold">Instant Policy Mapping:</span> Surfaces visa rules and institutional policies custom-mapped to each student's specific university.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start space-x-4">
+              <div className="bg-blue-100 text-blue-600 p-2 rounded-lg">
+                <GraduationCap className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-gray-700">
+                  <span className="font-semibold">Peer Community:</span> Connects newcomers to verified peer communities by campus, degree and field of study.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start space-x-4">
+              <div className="bg-green-100 text-green-600 p-2 rounded-lg">
+                <Globe2 className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-gray-700">
+                  <span className="font-semibold">Smart Itineraries:</span> Builds door-to-door plans with real-time updates on housing, transit and activities.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start space-x-4">
+              <div className="bg-yellow-100 text-yellow-600 p-2 rounded-lg">
+                <Zap className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-gray-700">
+                  <span className="font-semibold">Adaptive Planning:</span> Adjusts instantly when flights change or local events pop up.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start space-x-4">
+              <div className="bg-red-100 text-red-600 p-2 rounded-lg">
+                <CheckCircle className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-gray-700">
+                  <span className="font-semibold">Automated Setup:</span> Handles SIM activation, banking, transit cards and checklists within 24h of arrival.
+                </p>
+              </div>
+            </div>
+            
+            <div className="flex items-start space-x-4">
+              <div className="bg-indigo-100 text-indigo-600 p-2 rounded-lg">
+                <Clock className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-gray-700">
+                  <span className="font-semibold">Smart Reminders:</span> Pushes time-critical alerts for orientation, registration and visa renewals.
+                </p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-8 bg-blue-50 rounded-xl p-6 border border-blue-100">
+            <p className="text-blue-900 text-center italic">
+              "Our AI-powered platform combines all essential services into one seamless experience, 
+              eliminating the stress of international transitions while maximizing opportunities 
+              for connection and discovery."
+            </p>
+          </div>
         </div>
       </Container>
     </Section>

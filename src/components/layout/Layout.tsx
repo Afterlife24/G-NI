@@ -17,8 +17,7 @@ const navItems: NavItem[] = [
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen bg-[#0a192f]"> {/* Added background color */}
-      <div className="fixed inset-0 bg-[#0a192f] z-[9998] opacity-0 animate-fade-out pointer-events-none"></div>
+    <div className="flex flex-col min-h-screen bg-[#0a192f]">
       <Navbar navItems={navItems} />
       <main className="flex-grow">
         {children}

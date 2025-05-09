@@ -90,15 +90,26 @@ import Section from '../ui/Section';
 import { userGroups } from '../../data/userGroups';
 import * as LucideIcons from 'lucide-react';
 
+// Import local images
+import studentImage from '../../assets/students.jpg';
+import touristImage from '../../assets/tourists.jpeg';
+import businessImage from '../../assets/bussiess.jpg';
+
 const ServiceHighlights: React.FC = () => {
+  // Image mapping object
+  const genieImages = {
+    students: studentImage,
+    tourists: touristImage,
+    business: businessImage
+  };
+
   return (
-    <Section id="services" className="bg-white">
+    <Section id="services" className="bg-blue-950">
       <Container>
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Services</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Personalized Packages for Every Purpose – We’ve Got You 
-Covered.
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Our Services</h2>
+          <p className="text-lg text-white max-w-2xl mx-auto">
+            Personalized Packages for Every Purpose – We've Got You Covered.
           </p>
         </div>
 
@@ -111,29 +122,26 @@ Covered.
                 group.icon.charAt(0).toUpperCase() + group.icon.slice(1)
               ];
 
-              const genieImage =
-                "https://images.pexels.com/photos/5428836/pexels-photo-5428836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2";
-
               return (
                 <a
                   key={group.id}
                   href={`/services/${group.id}`}
                   className="group relative"
                 >
-                  <div className="p-6 rounded-2xl bg-yellow-100 border-4 border-yellow-500 shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col relative overflow-hidden">
+                  <div className="p-6 rounded-2xl bg-white  shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full flex flex-col relative overflow-hidden">
                     <div className="absolute inset-x-0 top-0 h-48 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                       <div className="absolute inset-0 bg-gradient-to-b from-blue-900/80 to-transparent z-10" />
                       <img
-                        src={genieImage}
+                        src={genieImages[group.id]}
                         alt={`${group.title} illustration`}
                         className="w-full h-full object-cover object-center"
                       />
                     </div>
                     <div className="relative z-20 pt-12 group-hover:pt-48 transition-all duration-300 ease-in-out">
-                      <div className="p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 bg-yellow-300 transition-colors">
+                        <div className="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 ">
                         {IconComponent && (
                           <IconComponent
-                            className="text-yellow-700 transition-colors"
+                            className="text-blue-900"
                             size={24}
                           />
                         )}
@@ -166,13 +174,6 @@ Covered.
                   group.icon.charAt(0).toUpperCase() + group.icon.slice(1)
                 ];
 
-                const genieImage = {
-                  tourists:
-                    "https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-                  business:
-                    "https://images.pexels.com/photos/3760263/pexels-photo-3760263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-                }[group.id];
-
                 return (
                   <a
                     key={group.id}
@@ -183,16 +184,16 @@ Covered.
                       <div className="absolute inset-x-0 top-0 h-48 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
                         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/80 to-transparent z-10" />
                         <img
-                          src={genieImage}
+                          src={genieImages[group.id]}
                           alt={`${group.title} illustration`}
                           className="w-full h-full object-cover object-center"
                         />
                       </div>
                       <div className="relative z-20 pt-12 group-hover:pt-48 transition-all duration-300 ease-in-out">
-                        <div className="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 group-hover:bg-yellow-100 transition-colors">
+                        <div className="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4 ">
                           {IconComponent && (
                             <IconComponent
-                              className="text-blue-900 group-hover:text-yellow-500 transition-colors"
+                              className="text-blue-90"
                               size={24}
                             />
                           )}

@@ -25,7 +25,6 @@ export default {
       fontFamily: {
       sans: ['Mulish', 'sans-serif'],
         serif: ['Mulish', 'serif'],
-      glitten: ['Glitten', 'sans-serif']
     },
       animation: {
         fadeIn: 'fadeIn 0.5s ease-in-out',
