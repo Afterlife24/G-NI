@@ -106,7 +106,7 @@ const AboutPage: React.FC = () => { // Renamed component to avoid conflict with 
             <div className="mt-10 text-center">
               <a 
                 href="#join-waitlist" 
-                className="inline-block bg-white text-blue-900 px-6 py-3 rounded-md font-semibold hover:bg-yellow-400 transition-colors"
+                className="inline-block bg-white text-blue-900 px-6 py-3 rounded-md font-semibold  transition-colors"
               >
                 Join Our Waitlist
               </a>

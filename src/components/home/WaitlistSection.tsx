@@ -83,7 +83,7 @@ const WaitlistSection: React.FC = () => {
                     type="email"
                     placeholder="Enter your email address*"
                     className={`w-full px-4 py-3 rounded-md text-gray-800 focus:outline-none focus:ring-2 ${
-                      error ? 'ring-2 ring-red-500' : 'focus:ring-yellow-500'
+                      error ? 'ring-2 ring-red-500' : 'focus:ring-white'
                     }`}
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -98,7 +98,7 @@ const WaitlistSection: React.FC = () => {
                     value={packageType}
                     onChange={(e) => setPackageType(e.target.value)}
                     className={`w-full px-4 py-3 rounded-md text-gray-800 focus:outline-none focus:ring-2 ${
-                      packageError ? 'ring-2 ring-red-500' : 'focus:ring-yellow-500'
+                      packageError ? 'ring-2 ring-red-500' : 'focus:ring-white'
                     } ${!packageType ? 'text-gray-500' : 'text-gray-800'}`}
                     required
                   >

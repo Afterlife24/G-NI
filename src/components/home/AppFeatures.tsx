@@ -85,7 +85,7 @@ const AppFeatures: React.FC = () => {
             </div>
             
             <div className="flex items-start space-x-4">
-              <div className="bg-yellow-100 text-yellow-600 p-2 rounded-lg">
+              <div className="bg-blue-950 text-white p-2 rounded-lg">
                 <Zap className="w-5 h-5" />
               </div>
               <div>

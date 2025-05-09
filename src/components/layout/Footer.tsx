@@ -27,7 +27,7 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
                 <li key={item.path}>
                   <a 
                     href={item.path} 
-                    className="text-white hover:text-yellow-400 transition-colors"
+                    className="text-white  transition-colors"
                   >
                     {item.title}
                   </a>
@@ -65,7 +65,7 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
               href="https://www.evanriosprojects.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-1 text-white hover:text-yellow-400 transition-colors"
+              className="group inline-flex items-center gap-1 text-white  transition-colors"
             >
              <span className="font-medium text-[#9b111e] group-hover:text-[#9b111e]/90 transition-colors">
   Evan Rios Projects

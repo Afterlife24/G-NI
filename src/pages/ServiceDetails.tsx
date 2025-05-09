@@ -146,7 +146,7 @@ const ServiceDetails: React.FC = () => {
                 </p>
                 <a
                   href="/contact"
-                  className="inline-block bg-white text-blue-900 px-8 py-3 rounded-md font-semibold hover:bg-yellow-400 transition-colors"
+                  className="inline-block bg-white text-blue-900 px-8 py-3 rounded-md font-semibold  transition-colors"
                 >
                   Contact Us
                 </a>
