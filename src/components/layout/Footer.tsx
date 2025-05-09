@@ -1,6 +1,8 @@
 import React from 'react';
 import Container from '../ui/Container';
 import { NavItem } from '../../types';
+import '../../styles/fonts.css';
+
 
 interface FooterProps {
   navItems: NavItem[];
@@ -12,7 +14,7 @@ const Footer: React.FC<FooterProps> = ({ navItems }) => {
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">G-NI</h3>
+            <h3 className="text-4xl font-bold mb-4"  style={{ fontFamily: "'Gütten', serif" }}>g-ni</h3>
             <p className="text-white mb-4">
               Simplifying the transition for international students arriving in the United States.
             </p>

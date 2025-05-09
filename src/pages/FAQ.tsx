@@ -38,9 +38,9 @@ const FAQ: React.FC = () => {
                   >
                     <span className="font-semibold text-white">{faq.question}</span>
                     {openIndex === index ? (
-                      <ChevronUp className="text-yellow-500" size={20} />
+                      <ChevronUp className="text-white" size={20} />
                     ) : (
-                      <ChevronDown className="text-yellow-500" size={20} />
+                      <ChevronDown className="text-white" size={20} />
                     )}
                   </button>
                   
@@ -61,7 +61,7 @@ const FAQ: React.FC = () => {
                 We're here to help. Reach out to our team for personalized assistance.
               </p>
               <a href="/contact">
-                <button className="bg-white text-blue-900 px-6 py-2 rounded-md hover:bg-yellow-400 transition-colors">
+                <button className="bg-white text-blue-900 px-6 py-2 rounded-md hover:bg-white transition-colors">
                   Contact Us
                 </button>
               </a>
