@@ -54,14 +54,14 @@ const FAQ: React.FC = () => {
             </div>
             
             <div className="mt-12 text-center bg-white/5 p-6 rounded-lg">
-              <h3 className="text-xl font-semibold text-yellow-500 mb-3">
+              <h3 className="text-xl font-semibold text-white mb-3">
                 Still have questions?
               </h3>
               <p className="text-gray-300 mb-6">
                 We're here to help. Reach out to our team for personalized assistance.
               </p>
               <a href="/contact">
-                <button className="bg-yellow-500 text-blue-900 px-6 py-2 rounded-md hover:bg-yellow-400 transition-colors">
+                <button className="bg-white text-blue-900 px-6 py-2 rounded-md hover:bg-yellow-400 transition-colors">
                   Contact Us
                 </button>
               </a>
