@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Preloader from './components/preloader/Preloader';
 import Home from './pages/Home';
@@ -9,19 +9,27 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 
+// ScrollToTop component that will handle scrolling on route changes
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   const [hasSeenPreloader, setHasSeenPreloader] = useState(() => {
-    // Check if preloader has been seen in this session
     return sessionStorage.getItem('hasSeenPreloader') === 'true';
   });
 
   const [isLoading, setIsLoading] = useState(!hasSeenPreloader);
 
   useEffect(() => {
-    // Set initial loading state
     setIsLoading(!hasSeenPreloader);
 
-    // Clean up session storage when leaving the page
     const handleBeforeUnload = () => {
       sessionStorage.removeItem('hasSeenPreloader');
     };
@@ -41,8 +49,9 @@ function App() {
 
   return (
     <>
-      {/* Always render the router and layout */}
       <Router>
+        {/* Add ScrollToTop inside Router but outside Layout */}
+        <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -55,7 +64,6 @@ function App() {
         </Layout>
       </Router>
 
-      {/* Conditionally render the preloader */}
       {isLoading && <Preloader onComplete={handlePreloaderComplete} />}
     </>
   );

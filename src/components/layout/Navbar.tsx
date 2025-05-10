@@ -5,7 +5,6 @@ import { NavItem } from '../../types';
 import Button from '../ui/Button';
 import '../../styles/fonts.css';
 
-
 interface NavbarProps {
   navItems: NavItem[];
 }
@@ -32,13 +31,13 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white backdrop-blur-sm shadow-md py-2' : 'bg-transparent py-4'
-      }`}
+      } ${!isScrolled && !isMenuOpen ? 'opacity-0' : 'opacity-100'}`}
     >
       <Container>
         <nav className="flex items-center justify-between">
-        <span className={`text-2xl font-bold ${isScrolled ? 'text-blue-950' : 'text-transparent'}`} style={{ fontFamily: "'Gütten', serif" }}>
-  g-ni
-</span>
+          <span className={`text-2xl font-bold ${isScrolled ? 'text-blue-950' : 'text-transparent'}`} style={{ fontFamily: "'Gütten', serif" }}>
+            g-ni
+          </span>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6">
@@ -47,7 +46,7 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
                 <li key={item.path}>
                   <a 
                     href={item.path} 
-                    className="font-medium text-white hover:text-blue-950 transition-colors"
+                    className={`font-medium ${isScrolled ? 'text-blue-950 hover:text-blue-700' : 'text-transparent'} transition-colors`}
                   >
                     {item.title}
                   </a>
@@ -55,13 +54,15 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
               ))}
             </ul>
             <a href="#join-waitlist">
-              <Button variant="primary">Join Waitlist</Button>
+              <Button variant="primary" className={isScrolled ? '' : 'opacity-0 pointer-events-none'}>
+                Join Waitlist
+              </Button>
             </a>
           </div>
           
           {/* Mobile Menu Toggle */}
           <button 
-            className="md:hidden text-gray-700 hover:text-blue-900"
+            className={`md:hidden ${isScrolled ? 'text-blue-950' : 'text-white'} hover:text-blue-700`}
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -86,7 +87,7 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
               ))}
             </ul>
             <a href="#join-waitlist" onClick={() => setIsMenuOpen(false)}>
-              <Button variant="secondary" className="w-full">Join Waitlist</Button>
+              <Button className="w-full bg-blue text-white hover:bg-white">Join Waitlist</Button>
             </a>
           </div>
         )}
