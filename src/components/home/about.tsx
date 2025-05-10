@@ -1,5 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import * as LucideIcons from 'lucide-react';
+
 
 // Temporary fallback components if imports fail
 const Container = ({ children, ...props }) => <div {...props}>{children}</div>;
@@ -50,6 +52,11 @@ const AboutSection: React.FC = () => {
                 personalized journeys.
               </p>
             </div>
+
+            <div className="mt-4 text-white font-medium flex items-center">
+                                    Learn More
+                                    <LucideIcons.ArrowRight className="ml-2 w-4 h-4" />
+                                  </div>
           </div>
         </div>
       </Container>
