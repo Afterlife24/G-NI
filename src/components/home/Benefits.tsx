@@ -6,8 +6,7 @@ import benefitsVideo from '../../assets/images/benefits .mp4'; // Adjust the pat
 
 const Benefits: React.FC = () => {
   const benefits = [
-    "From pre-arrival guidance to on-ground support, we cover every step of your journey.",
-    "Customized services for students, tourists, and business traveller's.",
+   
     "From pre-arrival guidance to on-ground support, we cover every step of your journey.",
     "Customized services for students, tourists, and business traveller's.",
     "Smooth transition into new environments with tips, tools, and insider knowledge.",
