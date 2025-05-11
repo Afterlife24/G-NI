@@ -9,7 +9,7 @@ interface LayoutProps {
 
 const navItems: NavItem[] = [
   { title: 'Home', path: '/' },
-  { title: 'Services', path: '/services' },
+  { title: 'Services', path: '/#services' },
   { title: 'About', path: '/about' },
   { title: 'FAQ', path: '/faq' },
   { title: 'Contact', path: '/contact' },

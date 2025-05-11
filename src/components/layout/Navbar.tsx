@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarProps> = ({ navItems }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   
   // Filter out the "Services" item
-  const filteredNavItems = navItems.filter(item => item.title !== "Services");
+  const filteredNavItems = navItems;
   
   useEffect(() => {
     const handleScroll = () => {

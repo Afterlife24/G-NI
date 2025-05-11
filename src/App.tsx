@@ -10,12 +10,32 @@ import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 
 // ScrollToTop component that will handle scrolling on route changes
+// const ScrollToTop = () => {
+//   const { pathname } = useLocation();
+
+//   useEffect(() => {
+//     window.scrollTo(0, 0);
+//   }, [pathname]);
+
+//   return null;
+// };
+
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
+    // If there's a hash, scroll to the element
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+        return; // Don't scroll to top if we found the element
+      }
+    }
+    
+    // Otherwise scroll to top
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [pathname, hash]);
 
   return null;
 };
