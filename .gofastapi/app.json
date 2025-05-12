@@ -3,6 +3,7 @@
     "project_id": "zTfvRKdrMmZlXkjxJdJetwdi",
     "app_id": "WdAeBFcVDWEXoQzVkDfTQpUC",
     "app_type": "static_site",
+    "domain": "www.gniapp.com",
     "deploy": {
         "target_dir": "./dist"
     }
