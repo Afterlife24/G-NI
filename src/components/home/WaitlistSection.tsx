@@ -33,7 +33,7 @@ const WaitlistSection: React.FC = () => {
     setIsLoading(true);
     
     try {
-      const response = await fetch('http://localhost:5000/details', {
+      const response = await fetch('https://server-gni.gofastapi.com/details', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
