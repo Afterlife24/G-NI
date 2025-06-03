@@ -7,22 +7,29 @@ interface LayoutProps {
   children: React.ReactNode;
 }
 
-const navItems: NavItem[] = [
+// Navbar items (excluding Privacy Policy)
+const navbarItems: NavItem[] = [
   { title: 'Home', path: '/' },
   { title: 'Services', path: '/#services' },
   { title: 'About', path: '/about' },
   { title: 'FAQ', path: '/faq' },
-  { title: 'Contact', path: '/contact' },
+  { title: 'Contact Us', path: '/contact' },
+];
+
+// Footer items (including Privacy Policy)
+const footerItems: NavItem[] = [
+  ...navbarItems,
+  { title: 'Privacy Policy', path: '/privacy-policy' },
 ];
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <div className="flex flex-col min-h-screen bg-[#0a192f]">
-      <Navbar navItems={navItems} />
+      <Navbar navItems={navbarItems} />
       <main className="flex-grow">
         {children}
       </main>
-      <Footer navItems={navItems} />
+      <Footer navItems={footerItems} />
     </div>
   );
 };

@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-white opacity-90 mb-8 md:mb-10 font-sans">
-            G-NI (Gateway of New International), a Global concierge 
+            A Global concierge 
             relocation service designed to facilitate seamless transitions for international
             travelers.
           </p>

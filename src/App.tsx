@@ -8,17 +8,11 @@ import ServiceDetails from './pages/ServiceDetails';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
+import CopyrightPolicy from './pages/copyright';
 
-// ScrollToTop component that will handle scrolling on route changes
-// const ScrollToTop = () => {
-//   const { pathname } = useLocation();
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-//   }, [pathname]);
 
-//   return null;
-// };
 
 const ScrollToTop = () => {
   const { pathname, hash } = useLocation();
@@ -80,6 +74,9 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/copyright" element={<CopyrightPolicy />} />
+
           </Routes>
         </Layout>
       </Router>

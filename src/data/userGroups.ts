@@ -5,7 +5,7 @@ export const userGroups: UserGroup[] = [
     id: 'students',
     title: 'International Students',
     tagline: "At G-NI, our goal is to provide students with a safe and seamless relocation experience to international study destinations.",
-    description: "𝗦𝗺𝗮𝗿𝘁 𝗦𝘂𝗽𝗽𝗼𝗿𝘁, 𝗜𝗻𝘀𝘁𝗮𝗻𝘁 𝗦𝘁𝗮𝗿𝘁. Arriving in... in a new country comes with challenges—G-NI makes sure you're never alone. Our student packages take care of every essential, from airport pickup and local SIM cards to banking and accommodation support.\n\nPowered by AI, our platform delivers personalized insights based on your university and field of study—connecting you with the right student groups, local resources, and your rights as an international student 𝗦𝗲𝘁𝘁𝗹𝗲 𝗶𝗻 𝗳𝗮𝘀𝘁𝗲𝗿. 𝗦𝘁𝗮𝗿𝘁 𝘀𝗺𝗮𝗿𝘁𝗲𝗿 .",
+    description: "𝗦𝗺𝗮𝗿𝘁 𝗦𝘂𝗽𝗽𝗼𝗿𝘁, 𝗜𝗻𝘀𝘁𝗮𝗻𝘁 𝗦𝘁𝗮𝗿𝘁. From airport pickups to housing, our AI tailors essentials to your university. Settle faster, connect with communities, and navigate student life effortlessly.",
     icon: 'graduationCap',
     services: [
       {
@@ -44,7 +44,7 @@ export const userGroups: UserGroup[] = [
     id: 'tourists',
     title: 'Tourists',
     tagline: "G-NI makes exploring unfamiliar destinations effortless, ensuring tourists feel confident, informed, and supported every step of the way",
-    description: "𝗧𝗿𝗮𝘃𝗲𝗹 𝗦𝗺𝗮𝗿𝘁𝗲𝗿. 𝗘𝘅𝗽𝗹𝗼𝗿𝗲 𝗙𝗿𝗲𝗲𝗹𝘆.Make every trip unforgettable with G-NI as your trusted local partner. Our tourist support packages go beyond basic guidance—offering personalized insights powered by AI to help you navigate transportation, discover local gems, stay safe, and connect to real-time updates.Whether it's your first visit or your fifth, we make sure every moment counts with confidence, comfort, and 24/7 smart assistance.",
+    description: "𝗧𝗿𝗮𝘃𝗲𝗹 𝗦𝗺𝗮𝗿𝘁𝗲𝗿. 𝗘𝘅𝗽𝗹𝗼𝗿𝗲 𝗙𝗿𝗲𝗲𝗹𝘆. G-NI's AI unlocks hidden gems, transit hacks, and stay safe with real-time updates. Tailored to solo or group trips, we turn visits into authentic adventures. Every moment unforgettable.",
     icon: 'plane',
     services: [
       {
@@ -73,7 +73,7 @@ export const userGroups: UserGroup[] = [
     id: 'business',
     title: 'Business Professionals',
     tagline: "G-NI provides tailored services for business travelers whether you're relocating for a new role, attending an international conference, or managing a cross-border project.",
-    description: "𝗦𝘁𝗿𝗲𝗮𝗺𝗹𝗶𝗻𝗲𝗱 𝗧𝗿𝗮𝘃𝗲𝗹. 𝗙𝗼𝗰𝘂𝘀𝗲𝗱 𝗥𝗲𝘀𝘂𝗹𝘁𝘀.Whether you're flying in for a conference, negotiating deals, or relocating for a new role, G-NI ensures a frictionless experience from the moment you land. Our business travel packages are powered by AI to offer real-time support, curated local insights, and smart logistics tailored to your agenda.Stay productive, protected, and prepared—so you can focus on what matters most business without borders.",
+    description: "𝗦𝘁𝗿𝗲𝗮𝗺𝗹𝗶𝗻𝗲𝗱 𝗧𝗿𝗮𝘃𝗲𝗹. 𝗙𝗼𝗰𝘂𝘀𝗲𝗱 𝗥𝗲𝘀𝘂𝗹𝘁𝘀. G-NI ensures frictionless business travel with AI-powered real-time support, curated insights, and smart logistics. Stay productive, protected, and prepared—so you can focus on business without borders",
     icon: 'briefcase',
     services: [
       {

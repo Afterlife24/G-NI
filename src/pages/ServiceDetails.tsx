@@ -115,7 +115,7 @@ const ServiceDetails: React.FC = () => {
                       <div className="space-y-6">
                         <div>
                           <h3 className="text-xl font-semibold text-white mb-4">
-                            What's Included:
+                            {/* What's Included: */}
                           </h3>
                           <div className="grid gap-4">
                             {service.included.map((item, i) => (

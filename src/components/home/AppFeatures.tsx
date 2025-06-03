@@ -85,7 +85,7 @@ const AppFeatures: React.FC = () => {
             </div>
             
             <div className="flex items-start space-x-4">
-              <div className="bg-blue-950 text-white p-2 rounded-lg">
+              <div className="bg-yellow-500 text-white p-2 rounded-lg">
                 <Zap className="w-5 h-5" />
               </div>
               <div>
@@ -96,23 +96,26 @@ const AppFeatures: React.FC = () => {
             </div>
             
             <div className="flex items-start space-x-4">
-              <div className="bg-red-100 text-red-600 p-2 rounded-lg">
-                <CheckCircle className="w-5 h-5" />
+              <div className="bg-blue-50 text-indigo-600 p-2 rounded-lg">
+
+                <Clock className="w-5 h-5" />
+
               </div>
               <div>
                 <p className="text-gray-700">
-                  <span className="font-semibold">Automated Setup:</span> Handles SIM activation, banking, transit cards and checklists within 24h of arrival.
+                <span className="font-semibold">Smart Reminders:</span> Pushes time-critical alerts for orientation, registration and visa renewals.
+
                 </p>
               </div>
             </div>
             
             <div className="flex items-start space-x-4">
-              <div className="bg-indigo-100 text-indigo-600 p-2 rounded-lg">
-                <Clock className="w-5 h-5" />
+            <div className="bg-red-100 text-red-600 p-2 rounded-lg">
+            <CheckCircle className="w-5 h-5" />
               </div>
               <div>
                 <p className="text-gray-700">
-                  <span className="font-semibold">Smart Reminders:</span> Pushes time-critical alerts for orientation, registration and visa renewals.
+                <span className="font-semibold">Automated Setup:</span> Handles SIM activation, banking, transit cards and checklists within 24h of arrival.
                 </p>
               </div>
             </div>
