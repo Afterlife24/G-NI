@@ -300,7 +300,7 @@ const Contact: React.FC = () => {
     setSubmitError('');
 
     try {
-      const response = await fetch('https://servergni-servergni.gofastapi.com/contact', {
+      const response = await fetch('https://0emu7rxwk2.execute-api.eu-west-3.amazonaws.com/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
