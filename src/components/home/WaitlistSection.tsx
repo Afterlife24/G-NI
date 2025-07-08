@@ -260,7 +260,7 @@ const WaitlistSection: React.FC = () => {
         <li>We will store your email address and package preference for communication purposes</li>
         <li>You will receive emails about our launch and service updates</li>
         <li>We will not share your information with third parties without your consent</li>
-        <li>Our full <a href="https://demo-gni.gofastapi.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">privacy policy</a> can be found on our website</li>
+        <li>Our full <a href="https://gniapp.com/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">privacy policy</a> can be found on our website</li>
       </ul>
     </div>
     
